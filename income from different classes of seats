@@ -1,0 +1,21 @@
+class_a_seats=30
+class_b_seats=15
+class_c_seats=5
+
+def main():
+    countAseats=int(input("enter count of a seats: "))
+    countBseats=int(input("enter count of b seats: "))
+    countCseats=int(input("enter count of c seats: "))
+    
+    incomeAseats=countAseats*class_a_seats
+    incomeBseats=countBseats*class_b_seats
+    incomeCseats=countCseats*class_c_seats
+    
+    showincome(incomeAseats, incomeBseats, incomeCseats)
+def showincome(incomeAseats, incomeBseats, incomeCseats):
+    totalincome=incomeAseats+incomeBseats+incomeCseats
+    print("income from class A seats: $", format(incomeAseats,".2f"), sep='')
+    print("income from class B seats: $", format(incomeBseats,".2f"), sep='')
+    print("income from class C seats: $", format(incomeCseats,".2f"), sep='')
+    print("total income: $", format(totalincome,".2f"),sep='')
+main()
